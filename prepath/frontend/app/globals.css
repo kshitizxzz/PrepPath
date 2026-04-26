@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0f172a;
+  color: white;
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold hover:shadow-lg transition-all duration-300 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-lg bg-slate-700 text-white font-semibold border border-gray-700 hover:bg-gray-800 transition-all duration-300;
+  }
+
+  .card {
+    @apply bg-slate-800 rounded-xl p-6 border border-gray-800 hover:border-blue-500/50 transition-colors;
+  }
+
+  .input-field {
+    @apply bg-slate-800 border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500/30 transition-colors;
+  }
+}
+

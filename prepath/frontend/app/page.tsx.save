@@ -1,0 +1,25 @@
+export default function Home() {
+  return (
+    <main
+      style={{
+        minHeight: "100vh",
+        background: "black",
+        color: "white",
+        display: "grid",
+        placeItems: "center",
+        fontFamily: "Arial"
+      }}
+    >
+      <div style={{ textAlign: "center" }}>
+        <h1 style={{ fontSize: "64px", marginBottom: "12px" }}>
+          PrepPath
+        </h1>
+        <p style={{ fontSize: "20px", color: "#aaa" }}>
+          Your shortest path to crack interviews.
+        </p>
+      </div>
+    </main>
+  )
+}
+
+
