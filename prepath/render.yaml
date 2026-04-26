@@ -2,6 +2,7 @@ services:
   - type: web
     name: preppath-backend
     runtime: docker
+    rootDir: prepath/backend
     dockerfilePath: ./Dockerfile
     envVars:
       - key: PORT
